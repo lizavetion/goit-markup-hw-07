@@ -34,8 +34,7 @@
 					</svg>
 				</button>
 			</div>
-			<div class="mobile-menu js-menu-container">
-				<div class="container mobile-menu-container">
+			<div class="mobile-menu js-menu-container container">
 					<div class="mobile-menu-first">
 						<button class="mobile-menu-close-btn js-close-menu">
 							<svg class="mobile-menu-close-icon" width="8" height="8">
@@ -95,7 +94,6 @@
 						</ul>
 					</div>
 				</div>
-			</div>
 		</header>
 		<!-- Main content -->
 		<main>
@@ -163,13 +161,19 @@
 					<h2 class="service_title">What are we doing</h2>
 					<ul>
 						<li class="service_item">
-							<img class="pics_of_service" src="./images/comp_infographics.jpg" alt="Website on computer" width="360" />
-						</li>
-						<li class="service_item"
-							><img class="pics_of_service" src="./images/app.jpg" alt="Mobile app" width="360" />
+							<img class="pics_of_service"
+									 srcset="./images/comp_infographics-x1.jpg x1, ./images/comp_infographics-x2.jpeg x2"
+									 src="./images/comp_infographics.jpg" alt="Website on computer" width="360" />
 						</li>
 						<li class="service_item">
-							<img class="pics_of_service" src="./images/app_on_phone.jpg" alt="Phone layout" width="360" />
+							<img class="pics_of_service"
+									 srcset="./images/app-x1.jpg x1, ./images/app-x2.jpeg x2"
+									 src="./images/app.jpg" alt="Mobile app" width="360" />
+						</li>
+						<li class="service_item">
+							<img class="pics_of_service"
+									 srcset="./images/app_on_phone-x1.jpg x1, ./images/app_on_phone-x2.jpeg x2"
+									 src="./images/app_on_phone.jpg" alt="Phone layout" width="360" />
 						</li>
 					</ul>
 				</div>
@@ -180,8 +184,8 @@
 					<h2 class="team_title">Our Team</h2>
 					<ul>
 						<li class="team_cards">
-							<div class="team-img mark"></div>
-<!--							<img src="./images/Mark_Guerrero.jpg" alt="Mark Guerrero, Product Designer" width="264" />-->
+							<img srcset="./images/Mark_Guerrero_x1.jpg x1, ./images/Mark_Guerrero_x2.jpeg x2"
+								src="./images/Mark_Guerrero.jpg" alt="Mark Guerrero, Product Designer" width="264" />
 							<div class="team_card_text">
 								<h3 class="team_cards_header">Mark Guerrero</h3>
 								<p class="team_cards_description">Product Designer</p>
@@ -218,8 +222,8 @@
 							</div>
 						</li>
 						<li class="team_cards">
-							<div class="team-img tom"></div>
-<!--							<img src="./images/Tom_Ford.jpg" alt="Tom Ford, Frontend Developer" width="264" />-->
+							<img srcset="./images/Tom_Ford_x1.jpg x1, ./images/Tom_Ford_x2.jpeg x2"
+								src="./images/Tom_Ford.jpg" alt="Tom Ford, Frontend Developer" width="264" />
 							<div class="team_card_text">
 								<h3 class="team_cards_header">Tom Ford</h3>
 								<p class="team_cards_description">Frontend Developer</p>
@@ -256,8 +260,8 @@
 							</div>
 						</li>
 						<li class="team_cards">
-							<div class="team-img camila"></div>
-<!--							<img src="./images/Camila_Garcia.jpg" alt="Camila Garcia, Marketing" width="264" />-->
+							<img srcset="./images/Camila_Garcia_x1.jpg x1, ./images/Camila_Garcia_x2.jpeg x2"
+								src="./images/Camila_Garcia.jpg" alt="Camila Garcia, Marketing" width="264" />
 							<div class="team_card_text">
 								<h3 class="team_cards_header">Camila Garcia</h3>
 								<p class="team_cards_description">Marketing</p>
@@ -294,8 +298,8 @@
 							</div>
 						</li>
 						<li class="team_cards">
-							<div class="team-img daniel"></div>
-<!--							<img src="./images/Daniel_Wilson.jpg" alt="Daniel Wilson, UI Designer" width="264" />-->
+							<img srcset="./images/Daniel_Wilson_x1.jpg x1, ./images/Daniel_Wilson_x2.jpeg x2"
+								src="./images/Daniel_Wilson.jpg" alt="Daniel Wilson, UI Designer" width="264" />
 							<div class="team_card_text">
 								<h3 class="team_cards_header">Daniel Wilson</h3>
 								<p class="team_cards_description">UI Designer</p>

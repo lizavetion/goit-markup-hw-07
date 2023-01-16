@@ -298,6 +298,10 @@ h2{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 40px;
 }
 
 .mobile-menu.is-open {
@@ -305,14 +309,6 @@ h2{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
-
-.mobile-menu-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-top: 80px;
-    padding-left: 40px;
 }
 
 .mobile-menu-close-btn {
@@ -673,11 +669,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     transform: scale(0);
 }
 .modal_box {
-    width: 408px;
+    max-width: 408px;
     border-radius: 4px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -687,22 +682,14 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     transform: scale(1);
     transition-duration: 250ms;
     transition-timing-function: linear;
+    height: 579px;
+    max-height: 90vh;
 }
-/*@media screen and (min-width: 768px) {*/
-/*    .modal_box {*/
-/*        padding-left: 24px;*/
-/*        padding-right: 24px;*/
-/*        position: sticky;*/
-/*        overflow-y: auto;*/
-/*        margin: auto;*/
-/*    }*/
-/*}*/
 
 @media screen and (max-width: 1199px) {
     .modal_box {
-        position: sticky;
         overflow-y: auto;
-        margin: auto;
+        margin: 10px;
     }
 }
 .form_title {
@@ -1099,35 +1086,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     height: 260px;
     background-size: 264px 260px;
 }
-.mark{
-    background-image: url(../images/Mark_Guerrero.jpg);
-}
-.tom{
-    background-image: url(../images/Tom_Ford.jpg);
-}
-.camila{
-    background-image: url(../images/Camila_Garcia.jpg);
-}
-.daniel{
-    background-image: url(../images/Daniel_Wilson.jpg);
-}
 
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-    .mark {
-        background-image: url(../images/Mark_Guerrero_x2.jpeg);
-    }
-    .tom{
-        background-image: url(../images/Tom_Ford_x2.jpeg);
-    }
-    .camila{
-        background-image: url(../images/Camila_Garcia_x2.jpeg);
-    }
-    .daniel{
-        background-image: url(../images/Daniel_Wilson_x2.jpeg);
-    }
-}
 .link{
     width: 100%;
     height: 100%;
